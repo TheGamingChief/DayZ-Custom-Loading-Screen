@@ -1,0 +1,234 @@
+WindowWidgetClass TextInputDialogRoot {
+ clipchildren 0
+ position 0 0
+ size 1.6 0.9
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 0
+ fixaspect outside
+ priority 1001
+ {
+  ImageWidgetClass TextInputDialog {
+   visible 1
+   clipchildren 1
+   inheritalpha 0
+   ignorepointer 1
+   color 0.1176 0.1176 0.1176 0.9804
+   position 0 0
+   size 1920 1080
+   halign center_ref
+   valign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 1
+   vexactsize 1
+   priority 1
+   draggable 0
+   imageTexture "{86FCA8476423A11B}Loadingscreen/loadingscreen.edds"
+   mode additive
+   "src alpha" 1
+   "no wrap" 0
+   stretch 1
+   Mask "{86FCA8476423A11B}Loadingscreen/loadingscreen.edds"
+   {
+    ButtonWidgetClass btnLeave {
+     visible 1
+     color 1 0 0 1
+     position 0 30
+     size 110 40
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     fixaspect inside
+     userID 1
+     style EmptyHighlight
+     text "#STR_TextInputDialogRoot_ButtonLeave0"
+     text_proportion 0.5
+     font "gui/fonts/metron-bold"
+     "disabled text color" 0.3412 0.3412 0.3412 1
+    }
+    TextWidgetClass txtLabel {
+     disabled 0
+     position 0 930
+     size 512 30
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     style Bold
+     text "#str_position_in_queue:"
+     font "gui/fonts/sdf_MetronBook72"
+     "exact text" 0
+     "text halign" center
+     "text valign" center
+    }
+    MultilineTextWidgetClass txtPosition {
+     color 1 1 1 1
+     position 0 970
+     size 512 28
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 0
+     "exact text size" 22
+     "size to text h" 1
+     "size to text v" 1
+     "text halign" center
+     wrap 1
+     "condense whitespace" 1
+    }
+    PanelWidgetClass SeparatorPanel {
+     color 0.7569 0.0941 0.0941 0.7843
+     position 0 840
+     size 0.65 10
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     scaled 1
+     priority 10
+     style rover_sim_colorable
+    }
+    MultilineTextWidgetClass txtNote {
+     visible 0
+     color 1 1 1 1
+     position 0 110
+     size 512 28
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     font "gui/fonts/sdf_MetronLight24"
+     "exact text" 0
+     "exact text size" 22
+     "size to text h" 1
+     "size to text v" 1
+     "text halign" center
+     wrap 1
+     "condense whitespace" 1
+    }
+   }
+  }
+  PanelWidgetClass toolbar_bg {
+   visible 0
+   inheritalpha 0
+   color 0 0 0 0.549
+   position 0 0
+   size 1 0.1
+   halign center_ref
+   valign bottom_ref
+   hexactpos 0
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   priority 1
+   style ToolbarWidget
+   {
+    WrapSpacerWidgetClass ConsoleToolbar {
+     visible 1
+     clipchildren 0
+     position 100 11
+     size 550 50
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 1
+     vexactsize 1
+     priority 100
+     "no focus" 1
+     Padding 20
+     Margin 0
+     "Size To Content H" 1
+     "Size To Content V" 1
+     content_halign bottom
+     content_valign center
+     {
+      GridSpacerWidgetClass Back {
+       clipchildren 0
+       position -0.00001 0
+       size 0 30
+       halign right_ref
+       valign bottom_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       priority 1
+       Padding 5
+       Margin 0
+       "Size To Content H" 1
+       "Size To Content V" 1
+       content_valign center
+       Columns 2
+       Rows 1
+       {
+        ImageWidgetClass BackIcon {
+         clipchildren 0
+         inheritalpha 0
+         size 38 38
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         scaled 1
+         image0 "set:xbox_buttons image:B"
+         mode blend
+         "src alpha" 1
+         "no wrap" 1
+         stretch 0
+         "flip u" 0
+         "flip v" 0
+         filter 1
+         nocache 0
+        }
+        TextWidgetClass BackText {
+         clipchildren 0
+         size 80 36
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         text "#str_textinputdialogroot_buttonleave0"
+         font "gui/fonts/sdf_MetronLight24"
+         "exact text" 1
+         "exact text size" 22
+         "size to text h" 1
+         "size to text v" 0
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  ImageWidgetClass Background {
+   ignorepointer 1
+   position 0 0
+   size 1 1
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   imageTexture "{86FCA8476423A11B}Loadingscreen/loadingscreen.edds"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 1
+   Mask "{86FCA8476423A11B}Loadingscreen/loadingscreen.edds"
+  }
+ }
+}
