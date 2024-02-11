@@ -8,11 +8,11 @@ The DayZ Custom Loading Screen template allows you to create a unique loading sc
 
 ## Important Note
 
-This loading screen template does not currently support ultrawide monitors or DayZ Expansion. If you're using either, consider an alternative solution.
+This loading screen template now supports ultrawide monitors, however, some stretching of the image may occur on ultrawide monitors. This template now works with DayZ with or without the DayZ Expansion mod.
 
 ## Video Tutorial
 
-For a detailed visual guide to creating your custom loading screen, check out our [Video Tutorial](https://youtu.be/7FdC9JfuliI).
+For a detailed visual guide to creating your custom loading screen, check out the [Video Tutorial](https://youtu.be/7FdC9JfuliI).
 
 ## Getting Started
 
